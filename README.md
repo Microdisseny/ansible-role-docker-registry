@@ -1,22 +1,25 @@
+![Status](https://travis-ci.org/asg1612/ansible-role-docker-registry.svg?branch=master)
+
 Role Name
 =========
 
-A brief description of the role goes here.
+This role deploy a container of [Docker registry](https://docs.docker.com/registry/) .
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+None
+
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+- asg1612.docker (or system docker )
 
 Example Playbook
 ----------------
@@ -25,14 +28,22 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: ansible-role-docker-registry, x: 42 }
+         - role: asg1612.docker
+         - role: ansible-role-docker-registry
 
 License
 -------
+GNU General Public License v 3.0
 
-BSD
 
 Author Information
 ------------------
+Andrés Sánchez García
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+twitter: @asg1612
+
+e-mail: asg1612@gmail.com
+
+linkedin: https://www.linkedin.com/in/asg1612/
+
+website: andressaga.es
