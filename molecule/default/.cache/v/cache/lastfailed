@@ -1,1 +1,3 @@
-{}
+{
+  "tests/test_default.py::test_registry_socket[ansible://instance]": true
+}
