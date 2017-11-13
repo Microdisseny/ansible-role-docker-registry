@@ -12,5 +12,5 @@
       - 8.8.8.8
       - 9.9.9.9
   roles:
-    - role: ansible-role-docker
+    - role: docker
     - role: ansible-role-docker-registry

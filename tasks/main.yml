@@ -3,7 +3,7 @@
 - name: Container present
   docker_container:
     name: registry
-    state: present
+    state: started
     image: registry:2
     restart: yes
     detach: true

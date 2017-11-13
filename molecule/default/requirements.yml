@@ -1,3 +1,2 @@
 ---
 - src: asg1612.docker
-  name: ansible-role-docker
