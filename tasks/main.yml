@@ -1,11 +1,16 @@
 ---
 # tasks file for ansible-role-docker-registry
-- name: Container present
-  docker_container:
-    name: registry
-    state: started
-    image: registry:2
-    restart: yes
-    detach: true
-    ports:
-      - "5000:5000"
+- name: Create directory docker_compose
+  file:
+    path: /var/local/docker_compose/registry
+    state: directory
+
+- name: Copy docker-compose.yml
+  copy:
+    src: docker-compose.yml
+    dest: /var/local/docker_compose/registry/docker-compose.yml
+
+- name: Launch registry service
+  docker_service:
+    project_src: /var/local/docker_compose/registry/
+    state: present
