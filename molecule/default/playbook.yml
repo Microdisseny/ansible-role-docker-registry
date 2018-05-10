@@ -12,5 +12,4 @@
       - 8.8.8.8
       - 9.9.9.9
   roles:
-    - role: asg1612.docker
     - role: ansible-role-docker-registry
