@@ -26,6 +26,3 @@ galaxy_info:
 
   galaxy_tags:
     - docker-registry
-
-dependencies:
-  - asg1612.docker
